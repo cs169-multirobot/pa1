@@ -1,0 +1,23 @@
+<launch>
+
+	<arg name="flock_size" default="9" />
+
+	<node name="init_sim" pkg="pa1" type="init_world.py" args="$(arg flock_size)" respawn="false" output="screen" />
+
+	<master auto="start"/>
+	<param name="/use_sim_time" value="true" />
+
+	<node pkg="map_server" type="map_server" name="map_server" args="$(find pa1)/maps/simple.yaml" respawn="false" >
+		<param name="frame_id" value="/map" />
+	</node>
+
+	<!-- start stage -->
+	<node pkg="stage_ros" type="stageros" name="stageros" args="$(find pa1)/maps/final.world" respawn="false" />
+
+	<!-- include robots -->
+	<include file="$(find pa1)/launch/one_robot.launch" >
+		<arg name="robot_id" value="$(eval arg('flock_size') - 1)" />
+		<arg name="flock_size" value="$(arg flock_size)" />
+	</include>
+
+</launch>
