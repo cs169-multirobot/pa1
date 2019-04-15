@@ -107,7 +107,7 @@ def alignment(linear_speed, angular_speed, cur_orient, avg_flock_orient):
         sign = -1.0
 
     # the error is large, correct the heading of the robot
-    if abs(error) > 0.1:
+    if abs(error) > 0.2:
         linear_x = linear_speed
         angular_z = angular_speed * sign
     # the robot's heading is correct, continue forward

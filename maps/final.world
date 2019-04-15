@@ -37,70 +37,70 @@ floorplan
 
 turtlebot
 (
-   pose [ 5.83830483759 2.79407538038 0.0 0.0 ]
+   pose [ 0.959206907187 2.8506735895 0.0 0.0 ]
    name "turtlebot0"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 2.29133176604 4.81936619333 0.0 0.0 ]
+   pose [ 3.49627983239 4.04723808955 0.0 0.0 ]
    name "turtlebot1"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 3.89658743181 4.83609000318 0.0 0.0 ]
+   pose [ 6.05573749074 5.07029980286 0.0 0.0 ]
    name "turtlebot2"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 7.35595438127 8.08407858026 0.0 0.0 ]
+   pose [ 4.63870746649 2.82290737134 0.0 0.0 ]
    name "turtlebot3"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 7.00766284419 0.88199739186 0.0 0.0 ]
+   pose [ 1.68495291374 8.46439686028 0.0 0.0 ]
    name "turtlebot4"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 4.38507191106 7.92139579478 0.0 0.0 ]
+   pose [ 4.8156097761 8.79868607948 0.0 0.0 ]
    name "turtlebot5"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 4.73717626972 9.41896183488 0.0 0.0 ]
+   pose [ 5.16602887287 2.12349378312 0.0 0.0 ]
    name "turtlebot6"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 3.96939001927 4.59965850588 0.0 0.0 ]
+   pose [ 7.29054229261 5.5931667686 0.0 0.0 ]
    name "turtlebot7"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 7.68555684491 1.99840606939 0.0 0.0 ]
+   pose [ 4.67568442106 2.49454947854 0.0 0.0 ]
    name "turtlebot8"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 8.55087010734 9.13724361283 0.0 0.0 ]
+   pose [ 8.75306569934 0.655022989544 0.0 0.0 ]
    name "turtlebot9"
    color "blue"
 )

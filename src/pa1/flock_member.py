@@ -25,7 +25,7 @@ class FlockMember:
         # parameters that define speed and spacing of the robots
         # these will be updated dynamically
         self.safe_distance = 1.0
-        self.far_distance = self.safe_distance + 2.0
+        self.far_distance = self.safe_distance + 3.0
         self.linear_speed = 0.4
         self.angular_speed = 0.5
 
@@ -64,7 +64,7 @@ class FlockMember:
         self.linear_speed = config['linear_speed']
         self.angular_speed = config['angular_speed']
         self.safe_distance = config['safe_distance']
-        self.far_distance = self.safe_distance + 2.0
+        self.far_distance = self.safe_distance + 3.0
 
 
     def pose_callback(self, msg):
@@ -116,7 +116,7 @@ class FlockMember:
 
         # find the smallest laser scan reading in front of the robot
         for i in range(len(ranges)):
-            if -math.pi / 4 < angle_min + angle_inc * i < math.pi / 4:
+            if -math.pi / 3 < angle_min + angle_inc * i < math.pi / 3:
                 if ranges[i] < min_laser_scan_reading:
                     min_laser_scan_reading = ranges[i]
 
@@ -138,7 +138,7 @@ class FlockMember:
         """
         The robot should continously act in some behavior.
         """
-        r = rospy.Rate(20)
+        r = rospy.Rate(10)
 
         while not rospy.is_shutdown():
 
