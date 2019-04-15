@@ -1,4 +1,4 @@
-include "/opt/ros/kinetic/share/turtlebot_stage/maps/stage/turtlebot.inc"
+include "turtlebot.inc"
 
 define floorplan model
 (

@@ -1,4 +1,4 @@
-include "/opt/ros/kinetic/share/turtlebot_stage/maps/stage/turtlebot.inc"
+include "turtlebot.inc"
 
 define floorplan model
 (
@@ -37,63 +37,70 @@ floorplan
 
 turtlebot
 (
-   pose [ 4.78427020202 8.66300363652 0.0 0.0 ]
+   pose [ 5.83830483759 2.79407538038 0.0 0.0 ]
    name "turtlebot0"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 2.2194329699 1.01460034976 0.0 0.0 ]
+   pose [ 2.29133176604 4.81936619333 0.0 0.0 ]
    name "turtlebot1"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 4.97678815043 5.90719074936 0.0 0.0 ]
+   pose [ 3.89658743181 4.83609000318 0.0 0.0 ]
    name "turtlebot2"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 7.61624267824 5.47154479984 0.0 0.0 ]
+   pose [ 7.35595438127 8.08407858026 0.0 0.0 ]
    name "turtlebot3"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 5.37760346987 4.03086472633 0.0 0.0 ]
+   pose [ 7.00766284419 0.88199739186 0.0 0.0 ]
    name "turtlebot4"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 8.32742337268 1.44643869967 0.0 0.0 ]
+   pose [ 4.38507191106 7.92139579478 0.0 0.0 ]
    name "turtlebot5"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 3.57248283118 8.64973964809 0.0 0.0 ]
+   pose [ 4.73717626972 9.41896183488 0.0 0.0 ]
    name "turtlebot6"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 5.3449732558 8.50362126741 0.0 0.0 ]
+   pose [ 3.96939001927 4.59965850588 0.0 0.0 ]
    name "turtlebot7"
    color "blue"
 )
 
 turtlebot
 (
-   pose [ 4.51184038442 6.70525575926 0.0 0.0 ]
+   pose [ 7.68555684491 1.99840606939 0.0 0.0 ]
    name "turtlebot8"
+   color "blue"
+)
+
+turtlebot
+(
+   pose [ 8.55087010734 9.13724361283 0.0 0.0 ]
+   name "turtlebot9"
    color "blue"
 )

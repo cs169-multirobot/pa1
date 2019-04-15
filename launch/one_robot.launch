@@ -9,7 +9,10 @@
   <!-- start dynamic reconfigure -->
 	<node pkg="pa1" type="server.py" name="$(eval 'reconfig_flock_' + str(arg('robot_id')))" args="$(arg robot_id)" output="screen" />
 
+  <!-- start robot behavior -->
   <node name="$(eval 'robot_' + str(arg('robot_id')))" pkg="pa1" type="flock.py" args="$(arg robot_id) $(arg flock_size)" respawn="false" output="screen" />
+
+  <!-- recursively call this launch file until all robots are created -->
   <include file="$(find pa1)/launch/one_robot.launch" if="$(eval arg('robot_id') > 0)" >
 		<arg name="robot_id" value="$(eval arg('robot_id') - 1)" />
     <arg name="flock_size" value="$(arg flock_size)" />
